@@ -27,6 +27,11 @@ describe('GitUserSearchController', function() {
       );
     }));
 
+    afterEach(function() {
+      httpBackend.verifyNoOutstandingExpectation();
+      httpBackend.verifyNoOutstandingExpectation();
+    });
+
 
   var items = [
     {
@@ -49,10 +54,7 @@ describe('GitUserSearchController', function() {
   });
 
 
-  afterEach(function() {
-    httpBackend.verifyNoOutstandingExpectation();
-    httpBackend.verifyNoOutstandingExpectation();
-  });
+
 
 }); //when searching for a user
 
