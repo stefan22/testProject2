@@ -13,6 +13,8 @@ describe('GitUserSearchController', function() {
   });
 
 
+
+
   describe('when searching for a user', function() {
 
   var items = [
@@ -29,8 +31,11 @@ describe('GitUserSearchController', function() {
   ];
 
   it('displays search results', function() {
+    ctrl.searchTerm = 'hello';
+    ctrl.doSearch();
     expect(ctrl.searchResult.items).toEqual(items);
   });
+
 }); //when searching for a user
 
 
