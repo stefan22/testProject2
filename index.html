@@ -11,10 +11,12 @@
     <script src="js/GitUserSearchController.js"></script>
     <script src="js/searchFactory.js"></script>
     <script src="test/items.json"></script>
+    <link rel="stylesheet" href="public/css/style.css">
   </head>
 
   <body ng-controller="GitUserSearchController as searchCtrl">
     <div>
+      <h2>Github Profiles<h2>
       <form class="form-horizontal">
         <input type="search" ng-model="searchCtrl.searchTerm"
          ng-change="searchCtrl.doSearch()" ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }">
